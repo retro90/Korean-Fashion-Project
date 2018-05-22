@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Influences in Korean Fashion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+
+
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #ffffff;
+
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 30px;
+      color: #fecf67;
+      font
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 5px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+      height: 320px;
+      width: 220px;
+
+  }
+  .person:hover {
+      border-color: #d2b3b7;
+      -webkit-filter:grayscale(5);
+      filter: (5);
+      cursor: text;
+
+
+    }
+  .carousel-inner img {
+      width: 30%;
+      margin: auto;
+      margin-top: 50px;
+
+
+  }
+  .carousel-caption h3 {
+      color: #fecf67 !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #333;
+      color: #ffffff;
+
+  }
+  .bg-1 h3 {color: #fecf67;}
+  .bg-1 p {font-style: italic;}
+  .bg-2 {background-color: #333;
+
+  }
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #d2b3b7;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #9ead9b;
+      color: #ffffff;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #9ead9b;
+      background-color: #9ead9b;
+      color: #9ead9b;
+  }
+  .modal-header, h4, .close {
+      background-color: #d283b7;
+      color: #d2b3b7 !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #fecf67;
+
+
+  }
+  .navbar {
+      font-family: 'Unica One', cursive;
+      margin-bottom: 0;
+      background-color: #de97b1;
+      border: 0;
+      font-size: 20px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #ffffff !important;
+      font-size: 20px;
+  }
+  .navbar-nav li a:hover {
+      color: #e7d8d4 !important;
+      cursor: crosshair;
+  }
+  .navbar-nav li.active a {
+      color: #fecf67 !important;
+      background-color: #9ead9b !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #de97b1;
+      color: #333;
+      padding: 32px;
+      font-family: 'Unica One', cursive;
+
+  }
+  footer a {
+      color: #fecf67;
+      font-family: 'Unica One', cursive;
+  }
+  footer a:hover {
+      color: #e7d8d4;
+      text-decoration: none;
+      font-family: 'Unica One', cursive;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+#menu1 {
+  color: black;
+}
+#designers{
+  padding: 80px 120px;
+  border-top: solid;
+  margin-top: 500px;
+
+
+}
+div.gallery {
+    border: 1px solid #00000;
+
+}
+
+div.gallery:hover {
+
+    cursor: text;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: text;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 20.99999%;
+margin-right: 25px;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.p {
+  margin-top: 100px;
+}
+.picture {
+  text-align:center;
+}
+.photos img {
+    position: inherit;
+    width: 220px;
+    margin-top: 10px;
+
+}
+.photos img:nth-of-type(1) {
+    left: 50px;
+    top: 50px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(2) {
+    left: 150px;
+    top: 100px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(3) {
+    left: 250px;
+    top: 50px;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.photos img:nth-of-type(4) {
+    left: 350px;
+    top: 150px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.photos img:nth-of-type(5) {
+    left: 450px;
+    top: 50px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+.photos img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 10;
+}
+.photos img:hover {
+    -webkit-transform: rotate(380deg) scale(1.5);
+    -moz-transform: rotate(380deg) scale(1.5);
+    -o-transform: rotate(380deg) scale(1.5);
+    transform: rotate(380deg) scale(1.5);
+    z-index: 10;
+}
+.photos img {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.photos img {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 10px 10px 30px 10px;
+    background: white;
+    border: solid 1px black;
+}
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+@keyframes animation-name{
+    keyframes-selector: {css styles}
+    keyframes-selector: {css styles}
+    "
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.blink {
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+
+}
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+
+}
+#designers {
+  background: #333;
+  opacity: 0.5;
+}
+
+  </style>
+
+
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+  <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+  <video autoplay loop id="video-background" muted plays-inline>
+    <source src="./video/Style-ID-Seoul-Fashion-Week-AW-1819.mp4" type="video/mp4">
+  </video>
+
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <img src="images/purse12.png" />
+        <a class="navbar-brand">B The Influence</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#influences">INFLUENCES</a></li>
+          <li><a href="#clothes">CLOTHES</a></li>
+          <li><a href="#designers">DESIGNERS</a></li>
+          <li><a href="./pages/workcited.html">COPYRIGHT INFO</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/seoul-fashion-week.jpg" alt="Seoul" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Ecelectic Mix</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/hanbok1.jpg" alt="Hanbok" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Hanbok</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/ss2-2.jpg" alt="Girls" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Big Sweaters</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/palus-co-kr1.png" alt="Man" width="500" height="700">
+        <div class="carousel-caption">
+          <h3>Layering</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<div id="about" class="container text-center">
+  <h3>&#778;About Korean Fashion</h3>
+  <article>
+    <br><p>In recent years, fashion in South Korea has greatly evolved, due to inspiration from the West. Factors that have influenced the changes in South Korean fashion are culture, wealth, and (social) media. The country's developing economy has also had a profound effect on fashion. Currently, South Korea maintains a unique fashion style that has become an acknowledged influence in worldwide trends. South Korea's style has become more expressive, reflecting a sens of individuality, which is absent from the style of its northern counterpart North Korea.</p></br>
+ <a href="https://en.wikipedia.org/wiki/Fashion_in_South_Korea" style="color:#fecf67">For more information click on the link</a> &#8672;
+ <br>&#8675;</br>
+  <p><a href="https://onmogul.com/stories/all-about-korean-fashion-trends" style="color:#fecf67" target="_blank">All about Korean Fashion trends</a> <p>
+
+
+
+  </article>
+  <p><em>We love their style!</em></p>
+  <p>A mixture of styles</p>
+  <br>
+
+      <center><div class="photos">
+          <img src="images/mandf.jpg" />
+          <img src="images/layers-korean-street-style.jpg" />
+          <img src="images/couple-korean-street-style.jpg" />
+          <img src="images/jeans.jpg" />
+      </div></center>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="influences" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">&#778;Influences</h3>
+    <p class="text-center">The influencer</p>
+    <picture>
+      <center><source media="(min-width: 650px)" srcset="images/Hanbokjpg.jpg"></center>
+      <center><source media="(min-width: 465px)" srcset="images/Hanbokjpg.jpg"></center>
+      <center><img class="blink" src="images/Hanbokjpg.jpg" alt="fashion" width="340" height="300" /></center>
+
+</picture>
+
+<article>
+
+You will also be surprised to see many western style clothes which are different from our traditional clothes such as the hanbok. When you o go around department stores, you can see many young students waiting in line to buy famous brands such as 96 New York jeans, Guess, Polo, Guess, Prada, Chanel, and Cartiers. It is hard to find clothes which represent traditonal Korean culture.
+Hanbok hanger: how traditional Korean dress influences today's street-style. In South Korea, one of the most enduring influences on fashion design is the traditional hanbok. Long before Chanel presented a Korean-dynasty- inspired cruise collection in Seol in 2015, Korean designers had played with different ideas for modernising the traditional national dress.
+K-pop fashion has gained much more attention compared to the olden days ass more people are now admiring the K-pop idols' sense of style and luxurious items they own. K-pop fashion has become the centre of attention of the world and is generally adopted by teenagers. Of coure, people were surprised to see this new concept and 2NE1 has instantly gained a huge following because of their distinct difference from the other K-pop groups.
+Currently, South Korea maintains a unique fashion style that has become an acknowledged influencce in worldwie trends.</p>
+
+<a href="http://seoulsync.com/lifestyle/fashion/korean-fashion-picks-week-american-influences" style="color:#fecf67" target="_blank">American Influences</a>
+</article>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+
+<div class="modal-content">
+<div class="modal-header">
+</div>
+<div class="modal-body">
+</div>
+<div class="form-group">
+</div>
+</div>
+<div class="modal-footer">
+<span class="glyphicon glyphicon-remove"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="clothes" class="container">
+  <h3 class="text-center">&#778;Clothes</h3>
+  <p class="text-center"><em>Fashionable</em></p>
+<center><p><a href="https://korcan50years.com/2018/04/05/seoul-fashion-week-f-w-2018-day-1/" style="color:#fecf67" target="_blank">7 Designers you need to know from Seoul Fashion</a><p></center>
+  <center><p><a href="https://www.highsnobiety.com/2013/10/15/top-20-korean-brands-to-know-2013/" style="color:#fecf67" target="_blank">20 Korean Brands You Need to Know..</a><p></center>
+  <center><p><a href="http://www.harpersbazaar.com.sg/fashion/street-style-seoul-fashion-week-ss17/" style="color:#fecf67" target="_blank">The best street style from Seoul Fashion week Spring 2017</a> <p></center>
+      <center><p><a href="https://cuteoutfits.com/korean-fashion-trends-cute-outfits/" style="color:#fecf67" target="_blank">Fashion trends outfit</a> <p></center>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/experiment.jpg">
+        <center><img class="swingimage" src="images/experiment.jpg" alt="BESKFXXK By Kim Bona and Im Jae Hyeok"/></center>
+
+      </a>
+      <div class="desc">Different ways you can wear an outfit by being experimental with silhouettes and by having fun with structural deconstruction.</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/kfashion.jpg">
+              <center><img class="swingimage" src="images/kfashion.jpg" alt="kfashion"/></center>
+      </a>
+      <div class="desc">Encompasses a more minimalistic look compared to the Renaissance era.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/bell.jpg">
+              <center><img class="swingimage" src="images/bell.jpg" alt="bell"/></center>
+      </a>
+      <div class="desc">Bell is a high-end contemporary fashion brand whos motto is "unlimited degree of freedom". </div>
+    </div>
+  </div>
+
+  <div class="responsive">
+  <div class="gallery">
+      <a target="_blank" href="images/nohant.jpg">
+              <center><img class="swingimage" src="images/nohant.jpg" alt="nohant"/></center>
+      </a>
+      <div class="desc">Using timeless materials such as cashmere and tweed, the collection features warm knitted scarves, cotton sweaters, flannel patterned suits.</div>
+    </div>
+  </div>
+
+
+
+
+
+<div class="tab-content; background-color:#fecf67;">
+    <div id="designers" class="tab-pane fade in active">
+      <h3 class="text-center">&#778;Korean Designers</h3>
+
+      <h3>Moon Young Hee</h3>
+      <p> is a designer who expresses Korean ideas modernistically. The world can share her designs. By the end of the 1960s, she had worked as a designer in Wha Shin Renaun, and she founded the 'Moon Boutique' ready-made clothing brand in 1974. In 1992, she founded the 'Mood Young Hee' designer brand.</p>
+      <h3>Andre Kim</h3>
+      <p>was a South Korean fashion designer based in Seoul, South Korea. He was k nown predominantly for his evening and wedding gown collections. He is survived by his adopted son, Kim Jung-do.
+      <h3>Lie Sang-Bong</h3>
+      <p> Lie Sang-Bong is a major fashion designer who shows Korean fashions in pret-a-porter, which is the core of the global fashion industry.
+      <h3>Kim Jae-Hyun</h3>
+      <p> The founder of  <a href="http://www.jdchouette.com/intro.asp" style="color:#fecf67">Jardin de Chouette,</a> a brand that has successfully garnered a large fan base thanks to its nostalgic applique paterns and feminine cuts. Jae-hyun later started a sister label called Lucky Chouette the same year Jardin de Chouette was founded (in 2005). The sister label lured more younger customers with its afforable price.
+      <h3>Kiok Kang</h3>
+      <p>Founder of <a href="http://kiokkang.tumblr.com/" style="color:#fecf67">Kiok</a> in 2004, the brand is famously known for its use of demin in its collection. The brand truly apppeals to the younger generations who prefer a good dose of old-school cool with contemporary charm in their wardrobe.
+      <h3>YK and Do</h3>
+      <p> Human Potential or <a href="http://www.hupot.net/" style="color:#fecf67">HUPOT</a> was founded by YK and DO in 2008. With head-to-toe- black and monochrome looks as the brand's signature style, Human Potential's celebrity fans include US rappers A$AP Rocky and Big Sean.
+        <p><a href="http://litvchannel.com/10-south-korean-fashion-designers-know/" style="color:#fecf67" target="_blank">10 South Korean fashion designers to know</a> <p>
+          <p><a href="https://www.wmagazine.com/story/seoul-fashion-week-fall-2017-designers-to-know-fall-2017" style="color:#fecf67" target="_blank">7 Designers you need to know from Seoul Fashion</a> <p>
+            <p><a href="https://www.vogue.com/article/korean-fashion-designers-concept-korea-beyond-closet-leyii-resurrection" style="color:#fecf67" target="_blank">Meet the 3 Cult Korean Designers Making Major Waves in New York</a> <p>
+              <p><a href="https://www.vogue.com/article/korean-fashion-designers-concept-korea-beyond-closet-leyii-resurrection" style="color:#fecf67" target="_blank">Five designers shaking up South Korea's fashion scene</a> <p>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Go Back Up">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+
+    <p>&#169; 2018 Keren Khiv</p>
+</footer>
+
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+</script>
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>

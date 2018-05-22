@@ -1,0 +1,88 @@
+body{
+background-color: #f9cdad;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f9cdad;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #f67280;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+}
+
+li a:hover {
+    transition: all 0.5s ease;
+
+    cursor:crosshair;
+    text-decoration: underline;
+
+
+}
+a:hover {
+color: #355c7d;
+}
+footer{
+clear: both;
+margin-top: 560px;
+position: relative;
+color: #f67280;
+
+   }
+   .navbar-text {
+     color:#c06c84;
+     font-size: 20px;
+  margin-top: 12px;
+   }
+   html {
+       /*If you had a black or close to black background*/
+       background-color: #f9cdad;
+   }
+   var HideShowTransition = Barba.BaseTransition.extend({
+     start: function() {
+       this.newContainerLoading.then(this.finish.bind(this));
+     },
+
+     finish: function() {
+       document.body.scrollTop = 0;
+       this.done();
+     }
+   });
+   .container {
+
+   }
+   .person {
+       border: 10px solid transparent;
+       margin-bottom: 10px;
+       width: 10%;
+       height: 10%;
+       opacity: 0.7;
+   }
+   .person:hover {
+       border-color: #f9cdad;
+   }
+   .carousel-inner img {
+       -webkit-filter: drop-shadow(10%);
+       filter: drop-shadow(10%); /* make all photos black and white */
+       width: 30%; /* Set width to 100% */
+       margin: auto;
+   }
+   .carousel-caption h3 {
+       color: #f9cdad !important;
+   }
+   @media (max-width: 100px) {
+     .carousel-caption {
+       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+     }

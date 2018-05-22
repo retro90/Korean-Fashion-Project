@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+
+<link rel="stylesheet" href="animations.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/grid.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<style>
+body {
+  margin: 0;
+  background-color: #fecf67;
+
+  background-position: bottom;
+}
+
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #d2b3b7;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Unica One', cursive;
+}
+
+#navbar a:hover {
+  background-color: #e7d8d4;
+  color: #d2b3b7;
+  text-decoration: underline;
+  cursor: crosshair;
+}
+.header {
+padding: 15px;
+}
+
+</style>
+
+
+<style>
+body {
+font-family: 'Unica One', cursive;
+border: dotted 3px;
+border-width: 10%;
+padding-right: 1em;
+    width: 90%;
+    height: 100%;
+    margin-left: 100%;
+    margin-right: 100%;
+    margin: 80px;
+    background-image:url('background4.jpg');
+  background-position:right bottom;
+  background-repeat: no-repeat;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+   	left: 0;
+    background-color: #d2b3b7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #9ead9b;
+  color: #d2b3b7;
+  text-decoration: underline;
+  cursor: crosshair;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.header {
+font-family: Antonio;
+margin-left: 250px;
+}
+.col-9 {
+  padding-left: 230px;
+  padding-top: 80px;
+}
+footer {
+  font-size: 15px;
+  padding-top:100px;
+  text-align: center;
+margin-top: 200px;
+margin-left: 235px;
+
+
+}
+.container {
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    margin-top: 80px;
+    overflow: scroll;
+    width: 600px;
+height: 200px;
+margin-left: 300px;
+
+}
+</style>
+</head>
+
+
+
+<div class="container">
+
+
+<body>
+  <div class="header" id="myheader">
+  <center><h1>B The Influence</h1></center>
+  </div>
+
+<span style="font-size:30px">Menu</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/influences.html">Influences</a>
+  <a href="pages/clothes.html">Clothes</a>
+  <a href="pages/designers.html">Designers</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor: nesw-resize;float:left;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+<center><h1>Fashion</h1></center
+<div class="col-1">
+  <article>
+    <p>In recent years, fashion in South Korea has greatly evolved, due to inspiration from the west. Factors that have influenced the changes in South Korean fashion are culture, wealth, and (social) media. The countri's developing economy has also had a profound effect on fashion. </p>
+
+  </article>
+
+
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+}
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.dlmenu.js"></script>
+<script src="js/pagetransitions.js"></script>
+
+<footer>
+  <p>&#169; 2018 Keren Khiv</p>
+</footer>
+</body>
+</html>

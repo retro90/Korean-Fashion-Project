@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Influences in Korean Fashion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+
+
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #111;
+      font
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 5px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+
+
+  }
+  .person:hover {
+      border-color: #d2b3b7;
+      -webkit-filter:grayscale(5);
+      filter: (5);
+      cursor: text;
+
+
+    }
+  .carousel-inner img {
+      width: 20%;
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fecf67 !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #333;
+      color: #ffffff;
+  }
+  .bg-1 h3 {color: #ffffff;}
+  .bg-1 p {font-style: italic;}
+  .bg-2 {background-color: #333;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #d2b3b7;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #9ead9b;
+      color: #9ead9b;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #9ead9b;
+      background-color: #9ead9b;
+      color: #9ead9b;
+  }
+  .modal-header, h4, .close {
+      background-color: #d283b7;
+      color: #d2b3b7 !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #fecf67;
+
+
+  }
+  .navbar {
+      font-family: 'Unica One', cursive;
+      margin-bottom: 0;
+      background-color: #d2b3b7;
+      border: 0;
+      font-size: 20px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fecf67 !important;
+      font-size: 20px;
+  }
+  .navbar-nav li a:hover {
+      color: #e7d8d4 !important;
+      cursor: crosshair;
+  }
+  .navbar-nav li.active a {
+      color: #fecf67 !important;
+      background-color: #9ead9b !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #d2b3b7;
+      color: #333;
+      padding: 32px;
+      font-family: 'Unica One', cursive;
+
+  }
+  footer a {
+      color: #fecf67;
+      font-family: 'Unica One', cursive;
+  }
+  footer a:hover {
+      color: #e7d8d4;
+      text-decoration: none;
+      font-family: 'Unica One', cursive;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+#menu1 {
+  color: black;
+}
+#designers{
+  padding: 80px 120px;
+  border-top: solid;
+  margin-top: 500px;
+
+
+}
+div.gallery {
+    border: 1px solid #fecf67;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    cursor: text;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: text;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 20.99999%;
+margin-right: 25px;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.p {
+  margin-top: 100px;
+}
+  </style>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">B The Influence</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#influences">INFLUENCES</a></li>
+          <li><a href="#clothes">CLOTHES</a></li>
+          <li><a href="#designers">DESIGNERS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="../images/korean.jpg" alt="New York" width="200" height="300">
+        <div class="carousel-caption">
+          <h3>South Korea</h3>
+          <p>Fashion Week.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../images/korean.jpg" alt="Chicago" width="200" height="300">
+        <div class="carousel-caption">
+          <h3>Top</h3>
+          <p>Clothes</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../images/korean.jpg" alt="Los Angeles" width="200" height="300">
+        <div class="carousel-caption">
+          <h3>Korean</h3>
+          <p>Fashion</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div id="about" class="container text-center">
+  <h3>&#778;About Korean Fashion</h3>
+  <article>
+    <p>In recent years, fashion in South Korea has greatly evolved, due to inspiration from the West. Factors that have influenced the changes in South Korean fashion are culture, wealth, and (social) media. The country's developing economy has also had a profound effect on fashion. Currently, South Korea maintains a unique fashion style that has become an acknowledged influence in worldwide trends. South Korea's style has become more expressive, reflecting a sens of individuality, which is absent from the style of its northern counterpart North Korea.</p>
+
+  </article>
+  <p><em>We love their style!</em></p>
+  <p>Different styles</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="../images/26-Seoul-SS-18-Day1.jpg" class="img-rounded person" alt="Random Name" width="300" height="350">
+      </a>
+      <div id="demo" class="collapse">
+        <p>clothes..</p>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="../images/korean.jpg" class="img-rounded person" alt="korean" width="260" height="350">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>clothes</p>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="../images/jeans.jpg" class="img-rounded person" alt="Random Name" width="260" height="350">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Scruffy: Jeans area not popular in the rogue state, because people like to be seen as smartly dressed-like these manequins.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (influences Section) -->
+<div id="influences" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">&#778;Influences</h3>
+    <p class="text-center">influences</p>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+</div>
+<div class="modal-body">
+</div>
+<div class="form-group">
+</div>
+</div>
+<div class="modal-footer">
+<span class="glyphicon glyphicon-remove"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (clothes Section) -->
+<div id="clothes" class="container">
+  <h3 class="text-center">&#778;Clothes</h3>
+  <p class="text-center"><em>Different clothes</em></p>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_fjords.jpg">
+        <img src="../images/jeans.jpg" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc"></div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../images/jeans.jpg">
+      <img src="../images/jeans.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../images/jeans.jpg">
+      <img src="../images/jeans.jpg" alt="Northern Lights" width="600" height="100">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+  <div class="gallery">
+      <a target="_blank" href="../images/jeans.jpg">
+      <img src="../images/jeans.jpg" alt="Mountains" width="600" height="100">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="tab-content; background-color:#fecf67;">
+    <div id="designers" class="tab-pane fade in active">
+      <h3 class="text-center">&#778;Korean Designers</h3>
+
+      <h3>Moon Young Hee</h3>
+      <p> is a designer who expresses Korean ideas modernistically. The world can share her designs. By the end of the 1960s, she had worked as a designer in Wha Shin Renaun, and she founded the 'Moon Boutique' ready-made clothing brand in 1974. In 1992, she founded the 'Mood Young Hee' designer brand.</p>
+      <h3>Andre Kim</h3>
+      <p>was a South Korean fashion designer based in Seoul, South Korea. He was k nown predominantly for his evening and wedding gown collections. He is survived by his adopted son, Kim Jung-do.
+      <h3>Lie Sang-Bong</h3>
+      <p> Lie Sang-Bong is a major fashion designer who shows Korean fashions in pret-a-porter, which is the core of the global fashion industry.
+      <h3>Kim Jae-Hyun</h3>
+      <p> The founder of  <a href="http://www.jdchouette.com/intro.asp">Jardin de Chouette,</a> a brand that has successfully garnered a large fan base thanks to its nostalgic applique paterns and feminine cuts. Jae-hyun later started a sister label called Lucky Chouette the same year Jardin de Chouette was founded (in 2005). The sister label lured more younger customers with its afforable price.
+      <h3>Kiok Kang</h3>
+      <p>Founder of <a href="http://kiokkang.tumblr.com/">Kiok</a> in 2004, the brand is famously known for its use of demin in its collection. The brand truly apppeals to the younger generations who prefer a good dose of old-school cool with contemporary charm in their wardrobe.
+      <h3>YK and Do</h3>
+      <p> Human Potential or <a href="http://www.hupot.net/">HUPOT</a> was founded by YK and DO in 2008. With head-to-toe- black and monochrome looks as the brand's signature style, Human Potential's celebrity fans include US rappers A$AP Rocky and Big Sean.
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Go Back Up">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+
+    <p>&#169; 2018 Keren Khiv</p>
+</footer>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
